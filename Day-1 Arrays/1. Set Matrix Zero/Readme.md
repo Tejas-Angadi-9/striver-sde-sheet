@@ -22,5 +22,5 @@ Approach: Instead of taking a row and col array outside. Why can't we just take 
 2. Traverse the matrix and check if the cell is 0 then check is j != 0 then set the 1st row jth cell as 0 if j == 0 then set col0 = 0
 3. After the end of the traversal of the matrix, we traverse again to set the values of the cell to 0 based on the row and col value if == 0. But we will start traversing from 2nd row and 2nd col excluding the 1st row and 1st col. In this check if the row or the col value of the cell is 0 then set the current cell to 0
 4. Now the inner part is done. The time comes for setting the values of 1st row and 1st col
-5. But here is the catch. If we change the col first then we will make the changes of the 1st row which is dependent on it and make other values to 1. So to avoid it we will set the first row to 0 if the col0 = 0 and first col to 0 if the matrix[0][0] = 0
+5. But here is the catch. If we change the col first then we will make the changes of the 1st row which is dependent on it and make other values to 1. So to avoid it we will set the first row to 0 if the matrix[0][0] = 0 and first col to 0 if the col0 = 0
 6. END
